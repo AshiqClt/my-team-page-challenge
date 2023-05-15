@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 7vh;
+  margin-bottom: -7vh;
+}
+.title {
+  width: 50%;
+}
+.description {
+  width: 50%;
+}
+.title h1 {
+  width: 278px;
+  height: 47px;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+.description h3 {
+  height: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.description span {
+  width: 439px;
+  height: 87px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+img {
+  width: 17vw;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10%;
+  row-gap: 1vh;
+  margin-bottom: 10vh;
+}
+.member {
+  display: flex;
+  width: 28%;
+}
+.designation {
+  text-transform: uppercase;
+  font-size: 12px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.offset{
+  margin-top: 10%;
+}
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  .team {
+    width: 90%;
+    column-gap: 8vw;
+  }
+  .member {
+    width: 45%;
+  }
+  img {
+    width: 35vw;
+  }
+  .offset{
+    margin-top: 0%;
+  }
+  .mob-offset{
+    margin-top: 10%;
+  }
+ 
+  .head{
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 2vh;
+  }
+  .title{
+    width: 100%;
+  }
+  .description{
+    width: 100%;
+  }
+  .title{
+    margin-bottom: -2vh;
+  }
+  img{
+    width: 37vw;
+  }
+}
