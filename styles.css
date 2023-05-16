@@ -16,7 +16,6 @@ body {
   width: 50%;
 }
 .title h1 {
-  width: 278px;
   height: 47px;
   font-family: "PT Serif";
   font-style: normal;
@@ -69,7 +68,7 @@ img {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
-.offset{
+.offset {
   margin-top: 10%;
 }
 .name {
@@ -77,10 +76,34 @@ img {
   font-weight: bold;
 }
 
+@media screen and (max-width: 900px) {
+  .head {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -4vh;
+    width: 85%;
+  }
+  .description {
+    width: 100%;
+    margin-top: -3vh;
+  }
+  img {
+    width: 23vw;
+  }
+  .team {
+    width: 85%;
+  }
+  .title {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .team {
     width: 90%;
     column-gap: 8vw;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
   }
   .member {
     width: 45%;
@@ -88,29 +111,34 @@ img {
   img {
     width: 35vw;
   }
-  .offset{
+  .offset {
     margin-top: 0%;
   }
-  .mob-offset{
+  .mob-offset {
     margin-top: 10%;
   }
- 
-  .head{
+
+  .head {
     width: 90%;
     flex-direction: column;
-    margin-bottom: 0;
     margin-top: 2vh;
+    margin-bottom: 0;
   }
-  .title{
+  .title {
     width: 100%;
   }
-  .description{
+  .description {
     width: 100%;
   }
-  .title{
+  .title {
     margin-bottom: -2vh;
   }
-  img{
+  img {
     width: 37vw;
+  }
+
+  .description h3 {
+    margin-top: 4vh;
+    margin-bottom: 0;
   }
 }
